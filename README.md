@@ -2,7 +2,8 @@
 How to learn deep learning.
 
 ## ENTRY
-* 最小NN（1 in 1 out） in JAVA
+* 最小NN（1 in 1 out） in JAVA  
+[entry/NN.java](entry/NN.java) - sample source
 * 基本フロー
 * 分かりやすいスライド
 
