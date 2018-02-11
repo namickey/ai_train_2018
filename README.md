@@ -1,20 +1,24 @@
 # AI training
 How to learn deep learning.
 
-## BEGINNER
+## ENTRY
+* 最小NN（1 in 1 out） in JAVA
+* 基本フロー
+* 分かりやすいスライド
+
+## TOOLS
 * Python 2 or 3
 * Anaconda or Miniconda
 * pip or conda
 * pyenv
 * Jupyter Notebook
 * atom
-* 最小NN（1 in 1 out）
-* 基本フロー
-* 分かりやすいスライド
 
-## STANDARD
+## BEGINNER
 * 自作NN（書籍：ニューラルネットワーク自作入門）
 * AND XOR
+
+## STANDARD
 * MNIST
 * TensorFlow Tutorials
 * Chainer Tutorials
@@ -25,7 +29,6 @@ How to learn deep learning.
 * https://gist.github.com/karpathy/d4dee566867f8291f086
 * RNN
 * LSTM
-* チャットボット
 
 ## EXTREME
 * AI関連サービス一覧を探す
@@ -44,3 +47,4 @@ How to learn deep learning.
 * AWSを使ってみる
 * クラウドAPIを使ってみる
 * 人口知能学会誌の論文を読む
+* チャットボットを使ってみる
