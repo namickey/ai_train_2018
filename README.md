@@ -1,11 +1,12 @@
 # AI training
 How to learn deep learning.
 
-## ENTRY
+## 入門コース：ENTRYレベル
+* スライド
+comming soon.
 * 最小NN（1 in 1 out） in JAVA  
 [entry/NN.java](entry/NN.java) - sample source
-* 分かりやすいスライド  
-comming soon.
+* IBMクラウド（Watson）の画像認識サービスを使ってみる
 
 ## TOOLS
 * Python 2 or 3
@@ -15,12 +16,11 @@ comming soon.
 * Jupyter Notebook
 * atom
 
-## BEGINNER
-* AND XOR  
-coming soon - 自作NN（書籍：ニューラルネットワーク自作入門）  
-※[deep-and](https://github.com/namickey/deep-and) - まとめ直して研修資料にする予定
+## 基礎コース：BEGINNERレベル
+* AND条件 ：自作NN（書籍：ニューラルネットワーク自作入門）
+* XOR条件 ：自作NN（書籍：ニューラルネットワーク自作入門）
 
-## STANDARD
+## 画像認識コース：STANDARDレベル
 * MNIST  
 自作NN（書籍：ニューラルネットワーク自作入門）  
 [mnist_softmax.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/tutorials/mnist/mnist_softmax.py) - TensorFlow Tutorials  
@@ -28,31 +28,34 @@ coming soon - 自作NN（書籍：ニューラルネットワーク自作入門�
 * CNN  
 [mnist_deep.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/tutorials/mnist/mnist_deep.py) - TensorFlow Tutorials  
 
-## HARDEST
+## 自然言語コース：HARDレベル
 * 読み物  
 [リカレントニューラルネットワークの理不尽な効力（翻訳）](https://qiita.com/KojiOhki/items/397f157342e0def06a9b)  
 * 自作RNN  
-[Python/numpy による最小の文字レベル RNN 言語モデル](https://gist.github.com/karpathy/d4dee566867f8291f086)  
-* RNN  
-※TensorFlow Tutorialsは、そろそろGPUが必要になってくるため、普通のノートPC（GPU無し）では動かせない。
-* LSTM  
+[Python/numpyによる最小の文字レベルRNN言語モデル](https://gist.github.com/karpathy/d4dee566867f8291f086)  
+* RNN ：TensorFlow Tutorials  
+* LSTM ：TensorFlow Tutorials  
 ※TensorFlow Tutorialsは、そろそろGPUが必要になってくるため、普通のノートPC（GPU無し）では動かせない。
 
-## EXTREME
-* AI関連サービス一覧を探す
-* AI関連サービスの仕組み（NNへのIN/OUT）を想像する
-* 気に入ったAI関連サービスを真似して作る
+## サービス開発コース：EXTREMEレベル
+* IBMクラウド（Watson）を使ったサービス開発
+ * AI関連サービス一覧を探す
+ * AI関連サービスの仕組み（NNへのIN/OUT）を想像する
+ * 気に入ったAI関連サービスを真似して作る
 
-## CHALLENGE
+## APPENDIX
+Let's challenge ! !
 * 本屋でAI関連本を全て立ち読みする
 * AI関連の'slideshare'と'speakerdeck'を全て見る
+* 人口知能学会誌の論文を読む
+* クラウドAPIを使ってみる
+* IBMクラウドサービスを使ってみる
+* Alexaを使ってみる
+* チャットボットを使ってみる
+* AWSを使ってみる
 * githubでソースコードを公開する
 * 人前で発表する
 * 人に教える
 * GPUを使ってみる
 * Linuxマシンを使ってみる
 * 自作マシン（GPU付き）を作る
-* AWSを使ってみる
-* クラウドAPIを使ってみる
-* 人口知能学会誌の論文を読む
-* チャットボットを使ってみる
