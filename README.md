@@ -6,7 +6,8 @@ How to learn deep learning.
 comming soon.
 * 最小NN（1 in 1 out） in JAVA  
 [entry/NN.java](entry/NN.java) - sample source
-* IBMクラウド（Watson）の画像認識サービスを使ってみる
+* IBMクラウド（Watson）の画像認識サービスを使ってみる  
+[https://namickey.github.io/ai_train_2018/](https://namickey.github.io/ai_train_2018/)  
 
 ## TOOLS
 * Python 2 or 3
