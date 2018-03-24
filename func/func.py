@@ -1,31 +1,15 @@
-from cloudant import Cloudant
-from flask import Flask, render_template, request, jsonify
-import atexit
-import os
-import cf_deployment_tracker
-import json
+#
+#
+# main() will be run when you invoke this action
+#
+# @param Cloud Functions actions accept a single parameter, which must be a JSON object.
+#
+# @return The output of this action, which must be a JSON object.
+#
+#
+import sys
 import requests
 import ibm_db
-
-# Emit Bluemix deployment event
-cf_deployment_tracker.track()
-# must needed by Bluemix setting
-port = int(os.getenv('PORT', 8000))
-
-app = Flask(__name__)
-
-@app.route('/vreco/<img>', methods=['GET'])
-def visualReco(img):
-    adddata(img)
-    # call visual-recognition webapi
-    url = 'https://gateway-a.watsonplatform.net/visual-recognition/api/v3/classify?api_key=befb491ae8c532e1db72518f6da8088bb2bd1b52&url=https://namickey.github.io/ai_train_2018/img/'+img+'&version=2016-05-20'
-    headers = {'Accept-Language': 'ja'}
-    tmpResponse = requests.get(url, headers=headers)
-
-    # allow-origin
-    newJsonResponse = jsonify(tmpResponse.json())
-    newJsonResponse.headers.add('Access-Control-Allow-Origin', '*')
-    return newJsonResponse
 
 def adddata(name=None):
     db2cred = {
@@ -55,5 +39,10 @@ def adddata(name=None):
         ibm_db.execute(stmt)
         ibm_db.close(db2conn)
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=port, debug=True)
+def main(dict):
+    print(dict['img'])
+    adddata(dict['img'])
+    url = 'https://gateway-a.watsonplatform.net/visual-recognition/api/v3/classify?api_key=befb491ae8c532e1db72518f6da8088bb2bd1b52&url=https://namickey.github.io/ai_train_2018/img/'+dict['img']+'&version=2016-05-20'
+    headers = {'Accept-Language': 'ja'}
+    tmpResponse = requests.get(url, headers=headers)
+    return tmpResponse.json()
