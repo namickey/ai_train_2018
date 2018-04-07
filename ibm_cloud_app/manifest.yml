@@ -1,5 +1,7 @@
 ---
+packages:
+ - python-tk
 applications:
- - name: fw
+ - name: kame
    random-route: true
-   memory: 64M
+   memory: 256M

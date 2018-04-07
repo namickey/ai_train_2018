@@ -6,6 +6,7 @@ import cf_deployment_tracker
 import json
 import requests
 import ibm_db
+import galpy
 
 # Emit Bluemix deployment event
 cf_deployment_tracker.track()
@@ -13,6 +14,10 @@ cf_deployment_tracker.track()
 port = int(os.getenv('PORT', 8000))
 
 app = Flask(__name__)
+
+@app.route('/km', methods=['GET'])
+def km():
+    return '<html><body>%s</body></html>' % galpy.pygal_stat()
 
 @app.route('/vreco/<img>', methods=['GET'])
 def visualReco(img):
