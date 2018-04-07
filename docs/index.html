@@ -17,13 +17,14 @@
 <visual title="パピー" img="puppy.jpg"></visual>
 <visual title="チキン" img="chicken.jpg"></visual>
 <visual title="群れ" img="birds.jpg"></visual>
-
+<h2>KMeans</h2>
+<a href='https://kame.mybluemix.net/km'>https://kame.mybluemix.net/km</a>
 <script type="riot/tag">
 <visual>
 <hr>
 <h3>{title}</h3>
 <p><img src="img/{img}" width="20%" height="20%"><p>
-<p><h4>GETでJSON結果を取得し、ここに表示する。※using Python Flask at IBM Cloud</h4><a onclick="{getvr}" href="https://fw.mybluemix.net/vreco/{img}">
+<p><h4>GETでJSON結果を取得し、ここに表示する。※using Python Flask at IBM Cloud</h4><a onclick="{getvr}" href="https://kame.mybluemix.net/vreco/{img}">
 画像認識して、画像に含まれるモノを一覧表示
 </a><p>
 <p each={items}>{class}:{score}%</p>
@@ -65,7 +66,5 @@ getvr_serverless(event){
 <script>
 riot.mount('*')
 </script>
-<h2>KMeans</h2>
-<a href='https://kame.mybluemix.net/km'>https://kame.mybluemix.net/km</a>
 </body>
 </html>
