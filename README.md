@@ -1,6 +1,11 @@
 # AI training
 How to learn deep learning.
 
+## 最初に読んでおくべきもの
+* [【保存版・初心者向け】独学でAIエンジニアになりたい人向けのオススメの勉強方法](https://qiita.com/tani_AI_Academy/items/4da02cb056646ba43b9d)  
+* [結局、機械学習と統計学は何が違うのか？](https://qiita.com/KanNishida/items/8ab8553b17cb57e772d6)  
+* [AI - その革命はまだ起きていない、そして起きそうもない](https://qiita.com/KanNishida/items/dfab2a09ff1e07139492)  
+
 ## 入門コース：ENTRYレベル
 * スライド
 comming soon.
