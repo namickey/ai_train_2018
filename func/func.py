@@ -13,18 +13,18 @@ import ibm_db
 
 def adddata(name=None):
     db2cred = {
-      "port": 50000,
-      "db": "BLUDB",
-      "username": "kvt88678",
-      "ssljdbcurl": "jdbc:db2://dashdb-txn-sbox-yp-dal09-03.services.dal.bluemix.net:50001/BLUDB:sslConnection=true;",
-      "host": "dashdb-txn-sbox-yp-dal09-03.services.dal.bluemix.net",
-      "https_url": "https://dashdb-txn-sbox-yp-dal09-03.services.dal.bluemix.net",
-      "dsn": "DATABASE=BLUDB;HOSTNAME=dashdb-txn-sbox-yp-dal09-03.services.dal.bluemix.net;PORT=50000;PROTOCOL=TCPIP;UID=kvt88678;PWD=5mgcq^dd69km5t2q;",
-      "hostname": "dashdb-txn-sbox-yp-dal09-03.services.dal.bluemix.net",
-      "jdbcurl": "jdbc:db2://dashdb-txn-sbox-yp-dal09-03.services.dal.bluemix.net:50000/BLUDB",
-      "ssldsn": "DATABASE=BLUDB;HOSTNAME=dashdb-txn-sbox-yp-dal09-03.services.dal.bluemix.net;PORT=50001;PROTOCOL=TCPIP;UID=kvt88678;PWD=5mgcq^dd69km5t2q;Security=SSL;",
-      "uri": "db2://kvt88678:5mgcq%5Edd69km5t2q@dashdb-txn-sbox-yp-dal09-03.services.dal.bluemix.net:50000/BLUDB",
-      "password": "5mgcq^dd69km5t2q"
+  "hostname": "dashdb-txn-sbox-yp-dal09-03.services.dal.bluemix.net",
+  "password": "8ljtzf^4m4p2mxj9",
+  "https_url": "https://dashdb-txn-sbox-yp-dal09-03.services.dal.bluemix.net",
+  "port": 50000,
+  "ssldsn": "DATABASE=BLUDB;HOSTNAME=dashdb-txn-sbox-yp-dal09-03.services.dal.bluemix.net;PORT=50001;PROTOCOL=TCPIP;UID=npv29724;PWD=8ljtzf^4m4p2mxj9;Security=SSL;",
+  "host": "dashdb-txn-sbox-yp-dal09-03.services.dal.bluemix.net",
+  "jdbcurl": "jdbc:db2://dashdb-txn-sbox-yp-dal09-03.services.dal.bluemix.net:50000/BLUDB",
+  "uri": "db2://npv29724:8ljtzf%5E4m4p2mxj9@dashdb-txn-sbox-yp-dal09-03.services.dal.bluemix.net:50000/BLUDB",
+  "db": "BLUDB",
+  "dsn": "DATABASE=BLUDB;HOSTNAME=dashdb-txn-sbox-yp-dal09-03.services.dal.bluemix.net;PORT=50000;PROTOCOL=TCPIP;UID=npv29724;PWD=8ljtzf^4m4p2mxj9;",
+  "username": "npv29724",
+  "ssljdbcurl": "jdbc:db2://dashdb-txn-sbox-yp-dal09-03.services.dal.bluemix.net:50001/BLUDB:sslConnection=true;"
     }
     db2conn = ibm_db.connect("DATABASE="+db2cred['db']+";HOSTNAME="+db2cred['hostname']+";PORT="+str(db2cred['port'])+";UID="+db2cred['username']+";PWD="+db2cred['password']+";","","")
     if db2conn:
