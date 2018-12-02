@@ -2,7 +2,7 @@ Flask==0.12.2
 cf-deployment-tracker==1.0.4
 cloudant==2.4.0
 ibm_db==2.0.8
-requests==2.18.4
+requests==2.20.0
 numpy==1.13.3
 scikit-learn==0.19.1
 ibm-cos-sdk==2.0.2
